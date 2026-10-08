@@ -27,7 +27,6 @@ A versão 1 (só consultoria R$900) foi substituída por esta. A consultoria vir
 - Temperatura: morna, interesse real, compra condicionada a patrocínio
 
 ## Pendências antes de enviar
-- Trocar o placeholder `55DDDNUMERO` no botão de WhatsApp pelo número real (aparece 2x no index.html)
 
 ## Decisão de ecossistema registrada
 Estrutura passa a R$1.500 em 2x + R$120/mês como novo padrão (substitui R$1.800 único do doc mestre). Atualizar o doc.
