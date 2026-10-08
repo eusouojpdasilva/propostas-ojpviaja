@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Proposta Vibe Mar</title>
+<title>Proposta Vibe Mar Travel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,13 +59,13 @@ h1,h2,h3{font-family:'Montserrat',sans-serif;line-height:1.1;}
 .hero .eyebrow{margin-bottom:22px;}
 .hero h1{
   font-weight:900;
-  font-size:clamp(38px,8vw,66px);
+  font-size:clamp(36px,7.5vw,62px);
   letter-spacing:-.02em;
   margin-bottom:24px;
 }
 .hero h1 em{font-style:normal;color:var(--gold);}
-.hero .lead{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:620px;}
-.hero .para{margin-top:20px;max-width:620px;color:var(--ink);opacity:.9;}
+.hero .lead{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:640px;}
+.hero .para{margin-top:20px;max-width:640px;color:var(--ink);opacity:.9;}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;}
 .chip{
   font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;
@@ -76,50 +77,55 @@ h1,h2,h3{font-family:'Montserrat',sans-serif;line-height:1.1;}
 section{padding:60px 0;border-bottom:1px solid var(--line);}
 .sec-label{margin-bottom:14px;}
 .sec-title{font-weight:800;font-size:clamp(24px,4vw,32px);letter-spacing:-.01em;margin-bottom:18px;}
-.sec-intro{color:var(--muted);max-width:640px;font-size:16px;}
+.sec-intro{color:var(--muted);max-width:660px;font-size:16px;}
 
-/* diagnostico cards */
+/* diagnostico */
 .diag{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px;}
 .diag .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;}
 .diag .box .n{font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
 .diag .box p{font-size:15px;color:var(--ink);opacity:.92;}
 
-/* entregaveis */
-.items{margin-top:38px;display:flex;flex-direction:column;gap:2px;}
-.item{
-  display:grid;grid-template-columns:52px 1fr;gap:20px;align-items:start;
-  padding:24px 0;border-top:1px solid var(--line);
-}
-.item:last-child{border-bottom:1px solid var(--line);}
-.item .num{
-  font-family:'Montserrat',sans-serif;font-weight:900;font-size:30px;
-  color:var(--gold);line-height:1;opacity:.85;
-}
-.item h3{font-weight:700;font-size:18px;margin-bottom:7px;letter-spacing:-.01em;}
-.item p{color:var(--muted);font-size:15px;}
-.item p strong{color:var(--ink);font-weight:600;}
+/* blocos de produto */
+.prod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:34px;margin-top:24px;}
+.prod .head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px;}
+.prod .head h3{font-weight:800;font-size:22px;letter-spacing:-.01em;}
+.prod .head .price{font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;color:var(--gold);white-space:nowrap;}
+.prod .role{font-size:14px;color:var(--muted);margin-bottom:22px;}
+.feat{display:flex;flex-direction:column;gap:0;}
+.feat .f{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:start;padding:14px 0;border-top:1px solid var(--line);}
+.feat .f:first-child{border-top:none;}
+.feat .f .dot{color:var(--gold);font-weight:900;font-size:16px;line-height:1.5;}
+.feat .f h4{font-weight:600;font-size:16px;margin-bottom:3px;}
+.feat .f p{color:var(--muted);font-size:14px;}
+.priceline{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 24px;}
+.priceline .pl{font-size:14px;color:var(--muted);}
+.priceline .pl b{color:var(--ink);font-weight:700;font-family:'Montserrat',sans-serif;}
 
 /* bonus */
-.bonus{background:var(--base-soft);border:1px solid var(--line);border-radius:16px;padding:30px;margin-top:38px;}
-.bonus .tag{display:inline-block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--base);background:var(--gold);border-radius:100px;padding:5px 13px;margin-bottom:16px;}
-.bonus-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:4px;}
-.bonus-list .b h3{font-weight:700;font-size:16px;margin-bottom:6px;}
-.bonus-list .b p{color:var(--muted);font-size:14px;}
+.bonus{background:var(--base-soft);border:1px solid var(--gold);border-radius:16px;padding:28px;margin-top:24px;}
+.bonus .tag{display:inline-block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--base);background:var(--gold);border-radius:100px;padding:5px 13px;margin-bottom:14px;}
+.bonus h3{font-weight:800;font-size:19px;margin-bottom:8px;}
+.bonus > p{color:var(--muted);font-size:15px;margin-bottom:18px;max-width:620px;}
+.bonus-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.bonus-list .b{border-top:1px solid var(--line);padding-top:14px;}
+.bonus-list .b h4{font-weight:600;font-size:15px;margin-bottom:5px;}
+.bonus-list .b p{color:var(--muted);font-size:13px;}
 
 /* investimento */
-.invest{background:var(--card);border:1px solid var(--gold);border-radius:18px;padding:40px;text-align:center;margin-top:8px;}
-.invest .k{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
-.invest .v{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(46px,10vw,72px);color:var(--ink);letter-spacing:-.03em;line-height:1.05;margin:12px 0 6px;}
-.invest .v b{color:var(--gold);}
-.invest .parc{font-size:17px;color:var(--gold-soft);font-weight:500;}
-.invest .obs{font-size:13px;color:var(--muted-dim);margin-top:18px;}
+.invest{background:var(--card);border:1px solid var(--gold);border-radius:18px;padding:38px;margin-top:8px;}
+.invest .k{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center;}
+.invest .rows{margin-top:24px;display:flex;flex-direction:column;gap:0;}
+.invest .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-top:1px solid var(--line);}
+.invest .r:first-child{border-top:none;}
+.invest .r .lbl{font-size:15px;color:var(--ink);}
+.invest .r .lbl small{display:block;color:var(--muted);font-size:13px;margin-top:2px;}
+.invest .r .val{font-family:'Montserrat',sans-serif;font-weight:800;font-size:18px;color:var(--gold);white-space:nowrap;text-align:right;}
+.invest .note{margin-top:22px;font-size:13px;color:var(--muted-dim);text-align:center;}
 
-/* proximo degrau */
-.next{display:flex;gap:22px;align-items:flex-start;background:var(--base-soft);border:1px dashed var(--line);border-radius:16px;padding:30px;margin-top:8px;}
-.next .mark{font-family:'Montserrat',sans-serif;font-weight:900;font-size:13px;letter-spacing:.14em;color:var(--gold);writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;opacity:.8;}
-.next .body h3{font-weight:700;font-size:19px;margin-bottom:10px;}
-.next .body p{color:var(--muted);font-size:15px;}
-.next .body p+p{margin-top:12px;}
+/* verba */
+.verba{background:var(--base-soft);border:1px dashed var(--line);border-radius:14px;padding:24px;margin-top:24px;}
+.verba h4{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:var(--gold);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+.verba p{color:var(--muted);font-size:14px;max-width:640px;}
 
 /* passos */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;}
@@ -131,8 +137,8 @@ section{padding:60px 0;border-bottom:1px solid var(--line);}
 /* cta */
 .cta{text-align:center;padding:74px 0 60px;}
 .cta .eyebrow{margin-bottom:20px;}
-.cta h2{font-weight:900;font-size:clamp(28px,5vw,42px);letter-spacing:-.02em;margin-bottom:16px;max-width:600px;margin-left:auto;margin-right:auto;}
-.cta p{color:var(--muted);max-width:480px;margin:0 auto 32px;font-size:16px;}
+.cta h2{font-weight:900;font-size:clamp(28px,5vw,42px);letter-spacing:-.02em;margin-bottom:16px;max-width:620px;margin-left:auto;margin-right:auto;}
+.cta p{color:var(--muted);max-width:500px;margin:0 auto 32px;font-size:16px;}
 .btn{
   display:inline-flex;align-items:center;gap:10px;
   font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;letter-spacing:.02em;
@@ -157,7 +163,7 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
   display:flex;align-items:center;justify-content:space-between;gap:14px;
   padding:12px 20px;
 }
-.sticky .sv{font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;}
+.sticky .sv{font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;}
 .sticky .sv small{display:block;font-family:'Inter';font-weight:400;font-size:11px;color:var(--muted);letter-spacing:.04em;}
 .sticky .sv b{color:var(--gold);}
 .sticky .btn{padding:13px 22px;font-size:13px;}
@@ -166,9 +172,7 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
   .diag,.bonus-list,.steps{grid-template-columns:1fr;}
   .hero{padding:52px 0 44px;}
   section{padding:46px 0;}
-  .invest{padding:30px 22px;}
-  .next{flex-direction:column;gap:14px;}
-  .next .mark{writing-mode:horizontal-tb;transform:none;}
+  .invest,.prod{padding:26px 22px;}
   .item{grid-template-columns:40px 1fr;gap:14px;}
   .sticky .btn span{display:none;}
 }
@@ -178,46 +182,46 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
 
 <div class="topbar">
   <div class="wrap">
-    <div class="brand">VIBE MAR <span>·</span> TURISMO</div>
-    <div class="validade">Resposta até segunda, 12 out</div>
+    <div class="brand">VIBE MAR <span>·</span> TRAVEL</div>
+    <div class="validade">Proposta · outubro 2026</div>
   </div>
 </div>
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Proposta de Consultoria · Outubro 2026</div>
-    <h1>Posicionar a Vibe Mar antes da <em>alta temporada</em></h1>
-    <p class="lead">Katya, este é o plano que a gente alinhou na reunião, por escrito, pra você ler com calma e decidir.</p>
-    <p class="para">O que trava a sua agência hoje não é falta de trabalho da sua parte. É falta de posicionamento. A consultoria resolve exatamente isso, e no tempo certo pra você capturar o caixa de fim de ano.</p>
+    <div class="eyebrow">Sistema de captação e vendas · Vibe Mar Travel</div>
+    <h1>A estrutura completa pra <em>Vibe Mar vender</em> com previsibilidade</h1>
+    <p class="lead">Katya, aqui está, por escrito, o que entrega cada parte do sistema e quanto custa cada uma. É o documento que você pediu pra avaliar e apresentar.</p>
+    <p class="para">São duas frentes que trabalham juntas. A Estrutura Reservas monta o sistema técnico que capta e organiza os clientes. A Assessoria Mensal mantém o conteúdo, o tráfego e a operação rodando todo mês. Uma sem a outra não entrega resultado. Juntas, transformam a Vibe Mar numa agência que não depende de indicação nem de sorte.</p>
     <div class="chips">
-      <div class="chip"><b>Consultoria</b> Efeito Reservas</div>
-      <div class="chip"><b>R$900</b> em até 3x</div>
-      <div class="chip"><b>+ 2 bônus</b> inclusos</div>
+      <div class="chip"><b>Estrutura Reservas</b> sistema completo</div>
+      <div class="chip"><b>Assessoria Mensal</b> operação contínua</div>
+      <div class="chip"><b>Consultoria de posicionamento</b> inclusa</div>
     </div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <div class="eyebrow sec-label">O diagnóstico</div>
-    <h2 class="sec-title">Onde a Vibe Mar está agora</h2>
-    <p class="sec-intro">Olhei a sua conta, a @vibemarturismo, e o cenário é claro. Você está recomeçando no turismo, e a base pra crescer ainda não está montada.</p>
+    <div class="eyebrow sec-label">Por onde começa</div>
+    <h2 class="sec-title">O cenário da Vibe Mar hoje</h2>
+    <p class="sec-intro">Antes dos números, o diagnóstico que orienta tudo. A agência está recomeçando, e o que falta não é esforço, é sistema.</p>
     <div class="diag">
       <div class="box">
         <div class="n">O perfil</div>
-        <p>530 seguidores e alcance orgânico baixo. A conta ainda não comunica pra quem você quer vender.</p>
+        <p>Conta com alcance orgânico baixo. Ainda não comunica pra quem a Vibe Mar quer vender nem traz lead sozinha.</p>
       </div>
       <div class="box">
-        <div class="n">A comunicação</div>
-        <p>Hoje está espalhada. Cruzeiro, Jalapão, Islândia, Cartagena, tudo junto. Falar com todo mundo acaba não falando com ninguém.</p>
+        <div class="n">A captação</div>
+        <p>Cliente que cai direto no WhatsApp chega sem noção de valor. Falta uma porta de entrada que filtra e qualifica antes.</p>
       </div>
       <div class="box">
-        <div class="n">A ordem certa</div>
-        <p>Antes de colocar dinheiro em anúncio ou organizar leads num sistema, o perfil precisa estar posicionado e com uma cara só.</p>
+        <div class="n">A organização</div>
+        <p>Sem CRM, cada lead vive solto no WhatsApp. Proposta, follow-up e fechamento se perdem no meio da conversa.</p>
       </div>
       <div class="box">
-        <div class="n">O momento</div>
-        <p>A alta temporada vai de outubro a janeiro. Dá pra capturar venda de Natal, Réveillon e férias de família ainda este ano.</p>
+        <div class="n">A constância</div>
+        <p>Produzir conteúdo e rodar anúncio todo mês, sozinha, no improviso, não para de pé. Precisa de operação por trás.</p>
       </div>
     </div>
   </div>
@@ -225,103 +229,136 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
 
 <section>
   <div class="wrap">
-    <div class="eyebrow sec-label">Por que agir agora</div>
-    <h2 class="sec-title">O caixa de curto prazo está na mesa</h2>
-    <p class="sec-intro">Natal, Réveillon e férias de janeiro pra famílias no Brasil. Bonito, Lençóis Maranhenses, Chapada dos Veadeiros, Jalapão, Gramado no Natal Luz. É a venda rápida que você consegue este ano, desde que o perfil esteja pronto pra receber e converter. Islândia e os pacotes mais caros ficam pra depois, quando você tiver marca e base, porque exigem seis a oito meses de preparo e não se misturam com pacote de família na mesma comunicação.</p>
+    <div class="eyebrow sec-label">Frente 1 · Setup inicial</div>
+    <h2 class="sec-title">Estrutura Reservas</h2>
+    <p class="sec-intro">O sistema técnico que capta e organiza os clientes da Vibe Mar. Montado uma vez, personalizado pra agência, pronto pra operar.</p>
+
+    <div class="prod">
+      <div class="head">
+        <h3>O sistema completo</h3>
+        <div class="price">R$1.500 em 2x de R$750</div>
+      </div>
+      <div class="role">Entrega única no início, com personalização pra identidade da Vibe Mar.</div>
+      <div class="feat">
+        <div class="f"><div class="dot">•</div><div><h4>Landing page de captação</h4><p>Página que apresenta a Vibe Mar, filtra o visitante e transforma curioso em lead qualificado, no visual da marca.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Formulário de qualificação</h4><p>Coleta destino, experiência desejada, prazo da viagem, acompanhantes e contato antes de chegar em você.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>CRM personalizado</h4><p>Painel que acompanha cada lead no funil: contato, reunião, proposta e fechamento. Com controle financeiro e alerta de aniversário do cliente.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Agente de atendimento no WhatsApp</h4><p>Recebe o lead do formulário, faz o pré-atendimento e entrega a conversa já aquecida pra você fechar.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Módulo de propostas</h4><p>Gera proposta de viagem com voos, hotéis e valores em link pronto pra enviar ao cliente final.</p></div></div>
+      </div>
+      <div class="priceline">
+        <div class="pl">Implementação <b>R$1.500</b> em 2x de R$750</div>
+        <div class="pl">Manutenção e atualizações <b>R$120/mês</b></div>
+        <div class="pl">Instalação em até <b>7 dias</b></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="eyebrow sec-label">O que você recebe</div>
-    <h2 class="sec-title">Consultoria Efeito Reservas</h2>
-    <p class="sec-intro">Dois encontros individuais comigo, mais a entrega completa de posicionamento, identidade e conteúdo pronto pra rodar.</p>
-    <div class="items">
-      <div class="item">
-        <div class="num">01</div>
-        <div><h3>Mapa de Posicionamento</h3><p>A gente extrai os três pilares da sua agência. Quem é o seu público, qual problema você resolve e como você entrega. Essa é a clareza que organiza todo o resto.</p></div>
+    <div class="eyebrow sec-label">Frente 2 · Operação contínua</div>
+    <h2 class="sec-title">Assessoria Mensal</h2>
+    <p class="sec-intro">Com o sistema no ar, a assessoria mantém a máquina girando todo mês. Conteúdo, tráfego e gestão do que foi montado.</p>
+
+    <div class="prod">
+      <div class="head">
+        <h3>A operação mês a mês</h3>
+        <div class="price">R$1.200 a R$1.500/mês</div>
       </div>
-      <div class="item">
-        <div class="num">02</div>
-        <div><h3>Branding Book</h3><p>Identidade visual própria pra Vibe Mar, com paleta de cores, tipografia e padrão de postagem. Nada igual ao da concorrência. A sua cara.</p></div>
+      <div class="role">Entrega recorrente, com suporte direto no WhatsApp.</div>
+      <div class="feat">
+        <div class="f"><div class="dot">•</div><div><h4>Conteúdo e linha editorial</h4><p>Calendário mensal, artes e roteiro de stories alinhados com o posicionamento e com o que roda nos anúncios.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Gestão de tráfego pago</h4><p>Criação e otimização das campanhas no Meta pra levar lead qualificado até a landing e o WhatsApp da Vibe Mar.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Gestão da automação</h4><p>Monitoramento e ajuste do agente de WhatsApp e dos fluxos de qualificação conforme o perfil dos leads muda.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Acompanhamento de resultado</h4><p>Leitura dos números do mês e ajuste de rota, pra cada real investido render mais com o tempo.</p></div></div>
       </div>
-      <div class="item">
-        <div class="num">03</div>
-        <div><h3>15 posts prontos</h3><p>Artes e carrosséis já no seu novo posicionamento, pra você começar a publicar com consistência desde o primeiro dia.</p></div>
-      </div>
-      <div class="item">
-        <div class="num">04</div>
-        <div><h3>Roteiro de stories do mês</h3><p>Sequência pensada pra atrair e qualificar as clientes certas, com intenção de conversão. Não é story solto.</p></div>
-      </div>
-      <div class="item">
-        <div class="num">05</div>
-        <div><h3>30 dias de suporte no WhatsApp</h3><p>Eu não entrego o material e sumo. Nesses 30 dias eu te guio na execução. <strong>O que postar, como postar e como responder quem chega</strong>, pra você não travar na hora de aplicar.</p></div>
+      <div class="priceline">
+        <div class="pl">Meses 1 a 3 <b>R$1.200/mês</b></div>
+        <div class="pl">A partir do mês 4 <b>R$1.500/mês</b></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow sec-label">Incluso ao fechar a estrutura</div>
+    <h2 class="sec-title">O que vem junto</h2>
 
     <div class="bonus">
-      <div class="tag">Bônus inclusos</div>
+      <div class="tag">Bônus</div>
+      <h3>Consultoria de Posicionamento Efeito Reservas</h3>
+      <p>O sistema técnico só vende se a comunicação estiver certa. Por isso a consultoria de posicionamento entra junto, sem custo adicional, pra definir a cara da Vibe Mar antes de ligar as campanhas.</p>
       <div class="bonus-list">
-        <div class="b">
-          <h3>Roteiros Infinitos</h3>
-          <p>O assistente que monta roteiros e propostas pra você em minutos. Fica seu pra usar no dia a dia.</p>
-        </div>
-        <div class="b">
-          <h3>Banco de Prompts de Viagem</h3>
-          <p>Mais de 100 prompts organizados por categoria, de imagem a atendimento no WhatsApp.</p>
-        </div>
+        <div class="b"><h4>Mapa de Posicionamento</h4><p>Público, problema e processo da Vibe Mar, extraídos em encontro individual.</p></div>
+        <div class="b"><h4>Branding Book</h4><p>Paleta, tipografia e padrão visual próprios pra agência.</p></div>
+        <div class="b"><h4>15 posts prontos</h4><p>Artes e carrosséis já no novo posicionamento, pra começar a publicar.</p></div>
+        <div class="b"><h4>Roteiro de stories</h4><p>Sequência mensal pensada pra atrair e qualificar as clientes certas.</p></div>
       </div>
+    </div>
+
+    <div class="bonus" style="border-color:var(--line);margin-top:16px;">
+      <div class="tag" style="background:var(--base-soft);color:var(--gold);border:1px solid var(--gold);">Ferramentas</div>
+      <h3>Roteiros Infinitos e Banco de Prompts</h3>
+      <p>Os dois produtos que agilizam o seu dia a dia entram junto. O assistente que monta roteiros e propostas em minutos, e o banco com mais de 100 prompts de imagem, conteúdo e atendimento.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="eyebrow sec-label">Investimento</div>
-    <h2 class="sec-title">Um valor, uma decisão</h2>
+    <div class="eyebrow sec-label">Os números, claros</div>
+    <h2 class="sec-title">Investimento</h2>
     <div class="invest">
-      <div class="k">Consultoria Efeito Reservas + 2 bônus</div>
-      <div class="v"><b>R$900</b></div>
-      <div class="parc">em até 3x de R$300</div>
-      <div class="obs">Os bônus Roteiros Infinitos e Banco de Prompts entram sem custo adicional ao fechar a consultoria.</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="eyebrow sec-label">O caminho depois</div>
-    <h2 class="sec-title">Quando o perfil estiver rodando</h2>
-    <div class="next">
-      <div class="mark">Próximo degrau</div>
-      <div class="body">
-        <h3>Assessoria Mensal com CRM</h3>
-        <p>Quando o seu perfil estiver posicionado e começando a gerar conversa no WhatsApp, o passo natural é subir pra assessoria. Nesse ponto eu assumo conteúdo, tráfego e automação por você, e o CRM organiza seus leads, suas propostas e o relacionamento com cada cliente.</p>
-        <p>Isso é pra quando você já estiver com fluxo rodando e quiser tirar a operação das suas costas. Não precisa decidir agora. A consultoria é o primeiro degrau e ele já resolve a sua dor mais urgente.</p>
+      <div class="k">O que a Vibe Mar paga pela estrutura e pela operação</div>
+      <div class="rows">
+        <div class="r">
+          <div class="lbl">Estrutura Reservas<small>Setup do sistema, pagamento único</small></div>
+          <div class="val">R$1.500<br><span style="font-size:13px;color:var(--muted);font-weight:500;">2x de R$750</span></div>
+        </div>
+        <div class="r">
+          <div class="lbl">Manutenção e atualizações<small>Mensal, mantém o sistema no ar e atualizado</small></div>
+          <div class="val">R$120/mês</div>
+        </div>
+        <div class="r">
+          <div class="lbl">Assessoria Mensal · meses 1 a 3<small>Conteúdo, tráfego e gestão</small></div>
+          <div class="val">R$1.200/mês</div>
+        </div>
+        <div class="r">
+          <div class="lbl">Assessoria Mensal · a partir do mês 4<small>Mesma entrega, valor cheio</small></div>
+          <div class="val">R$1.500/mês</div>
+        </div>
       </div>
+      <div class="note">A consultoria de posicionamento, o Roteiros Infinitos e o Banco de Prompts entram inclusos, sem custo adicional.</div>
+    </div>
+
+    <div class="verba">
+      <h4>Verba de anúncios</h4>
+      <p>A verba investida nos anúncios do Meta é separada do valor da assessoria e fica por conta da agência. Sem verba de mídia, as campanhas não entregam lead, então esse custo precisa entrar no planejamento desde o primeiro mês. A gestão dessa verba está inclusa na assessoria.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="eyebrow sec-label">Como funciona</div>
-    <h2 class="sec-title">Da decisão à execução</h2>
+    <div class="eyebrow sec-label">Como entra no ar</div>
+    <h2 class="sec-title">Da contratação à operação</h2>
     <div class="steps">
       <div class="step">
         <div class="s">ETAPA 01</div>
-        <h3>Diagnóstico a dois</h3>
-        <p>Primeiro encontro pra extrair os pilares da Vibe Mar e fechar o posicionamento.</p>
+        <h3>Posicionamento</h3>
+        <p>Primeiro a consultoria define a cara da Vibe Mar: público, oferta e comunicação.</p>
       </div>
       <div class="step">
         <div class="s">ETAPA 02</div>
-        <h3>Entrega</h3>
-        <p>Branding Book, 15 posts e roteiro de stories prontos no seu novo posicionamento.</p>
+        <h3>Montagem</h3>
+        <p>Em até 7 dias, landing, CRM e agente de WhatsApp no ar, personalizados pra agência.</p>
       </div>
       <div class="step">
         <div class="s">ETAPA 03</div>
-        <h3>30 dias juntos</h3>
-        <p>Suporte direto no WhatsApp pra você aplicar sem travar e já começar a publicar.</p>
+        <h3>Operação</h3>
+        <p>A assessoria liga as campanhas e mantém conteúdo, tráfego e automação rodando todo mês.</p>
       </div>
     </div>
   </div>
@@ -329,28 +366,28 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
 
 <div class="cta">
   <div class="wrap">
-    <div class="eyebrow">O combinado</div>
-    <h2>Pronta pra posicionar a Vibe Mar?</h2>
-    <p>Você me dá o retorno na tarde de segunda-feira, depois de rever as suas contas. Qualquer dúvida sobre o escopo, me chama antes que eu esclareço.</p>
-    <a class="btn" href="https://wa.me/55DDDNUMERO?text=Oi%20JP%2C%20li%20a%20proposta%20da%20consultoria%20e%20quero%20seguir%20com%20a%20Vibe%20Mar." target="_blank" rel="noopener">
+    <div class="eyebrow">Próximo passo</div>
+    <h2>Pronta pra montar a estrutura da Vibe Mar?</h2>
+    <p>Qualquer dúvida sobre escopo, valores ou prazos, me chama que eu explico ponto a ponto.</p>
+    <a class="btn" href="https://wa.me/55DDDNUMERO?text=Oi%20JP%2C%20li%20a%20proposta%20da%20estrutura%20e%20quero%20conversar%20sobre%20a%20Vibe%20Mar." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
-      Confirmar pelo WhatsApp
+      Falar pelo WhatsApp
     </a>
   </div>
 </div>
 
 <footer>
   <div class="wrap">
-    <div class="f-brand">VIBE MAR <span>·</span> TURISMO</div>
-    <div class="f-meta">Proposta de consultoria · Outubro 2026 · Válida até segunda-feira, 12 de outubro</div>
+    <div class="f-brand">VIBE MAR <span>·</span> TRAVEL</div>
+    <div class="f-meta">Proposta de estrutura e assessoria · outubro 2026</div>
   </div>
 </footer>
 
 <div class="sticky">
-  <div class="sv"><small>Consultoria + bônus</small>R$900 <b>em 3x</b></div>
-  <a class="btn" href="https://wa.me/55DDDNUMERO?text=Oi%20JP%2C%20li%20a%20proposta%20da%20consultoria%20e%20quero%20seguir%20com%20a%20Vibe%20Mar." target="_blank" rel="noopener">
+  <div class="sv"><small>Estrutura + assessoria</small>R$1.500 <b>+ mensal</b></div>
+  <a class="btn" href="https://wa.me/55DDDNUMERO?text=Oi%20JP%2C%20li%20a%20proposta%20da%20estrutura%20e%20quero%20conversar%20sobre%20a%20Vibe%20Mar." target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
-    <span>Confirmar</span>
+    <span>Falar</span>
   </a>
 </div>
 
