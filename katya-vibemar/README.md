@@ -10,6 +10,9 @@ Oferta: Consultoria de Posicionamento avulsa.
 - Preço: R$900 à vista (Pix ou transferência) ou 2x de R$480 no cartão.
 - Pagamento único, trabalho pontual, sem mensalidade.
 - Escopo mantido igual ao que ela viu como bônus na v2 (com Branding Book), a pedido do JP.
+- Formato: 2 encontros ao vivo. 1º de extração, 2º de entrega 7 dias depois. Mais 30 dias de suporte direto após o segundo encontro.
+- Visual: tema claro (cream/ink/gold da marca), diferente da v2 dark, pra ela perceber que é proposta nova. Barra fixa removida.
+- Galeria de exemplos de posts na página (pasta posts/): 2 criativos Países Nórdicos, carrossel rota Polônia, post República Tcheca. São portfolio, rotulados como trabalhos já entregues.
 
 ## Histórico
 - v1 (08/10): só consultoria R$900. Substituída.

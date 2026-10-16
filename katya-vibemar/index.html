@@ -5,160 +5,212 @@
 <title>Proposta Vibe Mar Travel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="description" content="Consultoria de Posicionamento para a Vibe Mar Travel">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --base:#0E0E0E;
-  --base-soft:#151515;
-  --card:#191919;
-  --line:#2A2A2A;
+  --ink:#0E0E0E;
+  --ink-soft:#1C1A17;
+  --cream:#F3EFE6;
+  --cream-deep:#ECE6D8;
+  --paper:#FFFFFF;
+  --line:#E2DBCC;
+  --line-soft:#EEE8DB;
   --gold:#C9A84C;
+  --gold-deep:#A4822F;
   --gold-soft:#E4CE86;
-  --ink:#F7F5F0;
-  --muted:#A49E92;
-  --muted-dim:#746F66;
+  --muted:#6E685C;
+  --muted-dim:#938C7E;
 }
-:root:not([data-theme="light"]){color-scheme:dark;}
+:root{color-scheme:light;}
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{
-  background:var(--base);
+  background:var(--cream);
   color:var(--ink);
   font-family:'Inter',system-ui,sans-serif;
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
-  padding-bottom:84px;
+  position:relative;
 }
-.wrap{max-width:860px;margin:0 auto;padding:0 24px;}
+/* grão sutil sobre a página inteira */
+body::before{
+  content:"";
+  position:fixed;inset:0;z-index:1;pointer-events:none;
+  opacity:.4;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.055'/%3E%3C/svg%3E");
+}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px;position:relative;z-index:2;}
 .eyebrow{
   font-family:'Montserrat',sans-serif;
-  font-weight:700;
-  font-size:11px;
-  letter-spacing:.28em;
-  text-transform:uppercase;
-  color:var(--gold);
+  font-weight:700;font-size:11px;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--gold-deep);
+  display:inline-flex;align-items:center;gap:11px;
 }
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);}
 h1,h2,h3{font-family:'Montserrat',sans-serif;line-height:1.1;}
 
 /* topbar */
 .topbar{
   border-bottom:1px solid var(--line);
-  background:rgba(14,14,14,.9);
-  backdrop-filter:blur(8px);
-  position:sticky;top:0;z-index:40;
+  background:rgba(243,239,230,.82);
+  backdrop-filter:saturate(1.2) blur(10px);
+  position:sticky;top:0;z-index:30;
 }
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:15px;padding-bottom:15px;}
 .brand{font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;letter-spacing:.02em;}
-.brand span{color:var(--gold);}
+.brand span{color:var(--gold-deep);}
 .validade{font-size:11px;color:var(--muted);letter-spacing:.04em;}
 
 /* hero */
-.hero{padding:76px 0 60px;border-bottom:1px solid var(--line);}
-.hero .eyebrow{margin-bottom:22px;}
-.hero h1{
-  font-weight:900;
-  font-size:clamp(36px,7.5vw,62px);
-  letter-spacing:-.02em;
-  margin-bottom:24px;
+.hero{position:relative;padding:92px 0 78px;overflow:hidden;border-bottom:1px solid var(--line);}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(60% 55% at 82% 8%, rgba(201,168,76,.22), transparent 60%),
+    radial-gradient(50% 50% at 0% 100%, rgba(201,168,76,.10), transparent 55%);
 }
-.hero h1 em{font-style:normal;color:var(--gold);}
+.hero .wrap{position:relative;z-index:2;}
+.hero .eyebrow{margin-bottom:24px;}
+.hero h1{
+  font-weight:900;font-size:clamp(38px,8vw,66px);letter-spacing:-.025em;margin-bottom:24px;max-width:15ch;
+}
+.hero h1 em{font-style:normal;color:var(--gold-deep);}
 .hero .lead{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:640px;}
-.hero .para{margin-top:20px;max-width:640px;color:var(--ink);opacity:.9;}
+.hero .para{margin-top:18px;max-width:640px;color:var(--ink-soft);}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;}
 .chip{
-  font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;
-  border:1px solid var(--line);border-radius:100px;padding:9px 16px;color:var(--ink);
+  font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;letter-spacing:.03em;
+  border:1px solid var(--line);background:var(--paper);border-radius:100px;padding:9px 16px;color:var(--ink);
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset;
 }
-.chip b{color:var(--gold);font-weight:700;}
+.chip b{color:var(--gold-deep);font-weight:700;}
 
 /* section */
-section{padding:60px 0;border-bottom:1px solid var(--line);}
+section{padding:64px 0;border-bottom:1px solid var(--line);}
 .sec-label{margin-bottom:14px;}
-.sec-title{font-weight:800;font-size:clamp(24px,4vw,32px);letter-spacing:-.01em;margin-bottom:18px;}
-.sec-intro{color:var(--muted);max-width:660px;font-size:16px;}
+.sec-title{font-weight:800;font-size:clamp(25px,4vw,34px);letter-spacing:-.015em;margin-bottom:16px;}
+.sec-intro{color:var(--muted);max-width:640px;font-size:16px;}
 
 /* diagnostico */
 .diag{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px;}
-.diag .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;}
-.diag .box .n{font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
-.diag .box p{font-size:15px;color:var(--ink);opacity:.92;}
+.diag .box{
+  background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px;
+  transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s ease,border-color .3s ease;
+}
+.diag .box:hover{transform:translateY(-4px);box-shadow:0 20px 40px -22px rgba(90,70,20,.4);border-color:var(--gold-soft);}
+.diag .box .n{font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;color:var(--gold-deep);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
+.diag .box p{font-size:15px;color:var(--ink-soft);}
 
-/* blocos de produto */
-.prod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:34px;margin-top:24px;}
-.prod .head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px;}
+/* produto */
+.prod{
+  background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:36px;margin-top:26px;
+  box-shadow:0 30px 60px -40px rgba(60,45,10,.35);position:relative;overflow:hidden;
+}
+.prod::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-deep),var(--gold-soft),var(--gold-deep));}
+.prod .head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px;}
 .prod .head h3{font-weight:800;font-size:22px;letter-spacing:-.01em;}
-.prod .head .price{font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;color:var(--gold);white-space:nowrap;}
-.prod .role{font-size:14px;color:var(--muted);margin-bottom:22px;}
-.feat{display:flex;flex-direction:column;gap:0;}
-.feat .f{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:start;padding:14px 0;border-top:1px solid var(--line);}
+.prod .head .price{font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;color:var(--gold-deep);white-space:nowrap;}
+.prod .role{font-size:14px;color:var(--muted);margin-bottom:24px;}
+.feat{display:flex;flex-direction:column;}
+.feat .f{display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start;padding:15px 0;border-top:1px solid var(--line-soft);}
 .feat .f:first-child{border-top:none;}
-.feat .f .dot{color:var(--gold);font-weight:900;font-size:16px;line-height:1.5;}
+.feat .f .dot{color:var(--gold-deep);font-weight:900;font-size:17px;line-height:1.4;}
 .feat .f h4{font-weight:600;font-size:16px;margin-bottom:3px;}
 .feat .f p{color:var(--muted);font-size:14px;}
-.priceline{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 24px;}
-.priceline .pl{font-size:14px;color:var(--muted);}
-.priceline .pl b{color:var(--ink);font-weight:700;font-family:'Montserrat',sans-serif;}
+.format{
+  margin-top:24px;padding:20px 22px;border:1px solid var(--gold-soft);border-radius:14px;
+  background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.03));
+}
+.format h4{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:8px;}
+.format p{font-size:14.5px;color:var(--ink-soft);}
+.format p b{font-weight:600;}
 
-/* investimento */
-.invest{background:var(--card);border:1px solid var(--gold);border-radius:18px;padding:38px;margin-top:8px;}
-.invest .k{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center;}
-.invest .rows{margin-top:24px;display:flex;flex-direction:column;gap:0;}
-.invest .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-top:1px solid var(--line);}
+/* exemplos de posts */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;}
+.pcard{
+  position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+  background:var(--cream-deep);aspect-ratio:4/5;cursor:zoom-in;
+  box-shadow:0 14px 30px -24px rgba(60,45,10,.6);
+}
+.pcard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.3,1),filter .4s ease;}
+.pcard .cap{
+  position:absolute;left:0;right:0;bottom:0;padding:38px 14px 13px;
+  background:linear-gradient(to top,rgba(14,14,14,.86),transparent);
+  color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;letter-spacing:.02em;
+  transform:translateY(6px);opacity:.92;transition:transform .4s ease,opacity .4s ease;
+}
+.pcard:hover img{transform:scale(1.07);}
+.pcard:hover .cap{transform:translateY(0);opacity:1;}
+.gallery-note{margin-top:18px;font-size:13px;color:var(--muted-dim);}
+
+/* investimento (contraste escuro) */
+.invest-sec{background:var(--ink);color:var(--cream);border-bottom:none;}
+.invest-sec .sec-title{color:var(--cream);}
+.invest-sec .eyebrow{color:var(--gold-soft);}
+.invest-sec .eyebrow::before{background:var(--gold-soft);}
+.invest-sec .sec-intro{color:rgba(243,239,230,.6);}
+.invest{
+  background:var(--ink-soft);border:1px solid rgba(201,168,76,.4);border-radius:20px;padding:40px;margin-top:30px;
+  position:relative;overflow:hidden;
+}
+.invest::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 85% 0%,rgba(201,168,76,.16),transparent 60%);pointer-events:none;}
+.invest .k{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,239,230,.55);text-align:center;position:relative;}
+.invest .rows{margin-top:24px;display:flex;flex-direction:column;position:relative;}
+.invest .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-top:1px solid rgba(243,239,230,.14);}
 .invest .r:first-child{border-top:none;}
-.invest .r .lbl{font-size:15px;color:var(--ink);}
-.invest .r .lbl small{display:block;color:var(--muted);font-size:13px;margin-top:2px;}
-.invest .r .val{font-family:'Montserrat',sans-serif;font-weight:800;font-size:18px;color:var(--gold);white-space:nowrap;text-align:right;}
-.invest .note{margin-top:22px;font-size:13px;color:var(--muted-dim);text-align:center;}
+.invest .r .lbl{font-size:15px;color:var(--cream);}
+.invest .r .lbl small{display:block;color:rgba(243,239,230,.55);font-size:13px;margin-top:2px;}
+.invest .r .val{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(20px,3vw,26px);color:var(--gold-soft);white-space:nowrap;text-align:right;}
+.invest .note{margin-top:22px;font-size:13px;color:rgba(243,239,230,.5);text-align:center;position:relative;}
 
 /* passos */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;}
-.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;}
-.step .s{font-family:'Montserrat',sans-serif;font-weight:900;font-size:12px;letter-spacing:.14em;color:var(--gold);margin-bottom:12px;}
-.step h3{font-weight:700;font-size:16px;margin-bottom:7px;}
+.step{
+  background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px;position:relative;
+  transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s ease;
+}
+.step:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(90,70,20,.4);}
+.step .s{font-family:'Montserrat',sans-serif;font-weight:900;font-size:12px;letter-spacing:.12em;color:var(--gold-deep);margin-bottom:12px;}
+.step h3{font-weight:700;font-size:17px;margin-bottom:7px;}
+.step .when{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;color:var(--muted);margin-bottom:9px;}
 .step p{color:var(--muted);font-size:14px;}
 
 /* cta */
-.cta{text-align:center;padding:74px 0 60px;}
+.cta{text-align:center;padding:84px 0 70px;position:relative;overflow:hidden;}
+.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 70% at 50% 0%,rgba(201,168,76,.14),transparent 60%);pointer-events:none;}
+.cta .wrap{position:relative;z-index:2;}
 .cta .eyebrow{margin-bottom:20px;}
-.cta h2{font-weight:900;font-size:clamp(28px,5vw,42px);letter-spacing:-.02em;margin-bottom:16px;max-width:620px;margin-left:auto;margin-right:auto;}
+.cta h2{font-weight:900;font-size:clamp(28px,5vw,44px);letter-spacing:-.02em;margin-bottom:16px;max-width:620px;margin-left:auto;margin-right:auto;}
 .cta p{color:var(--muted);max-width:500px;margin:0 auto 32px;font-size:16px;}
 .btn{
-  display:inline-flex;align-items:center;gap:10px;
+  display:inline-flex;align-items:center;gap:11px;
   font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;letter-spacing:.02em;
-  background:var(--gold);color:var(--base);
-  border:none;border-radius:100px;padding:17px 34px;text-decoration:none;cursor:pointer;
-  transition:transform .15s ease,background .15s ease;
+  background:var(--ink);color:var(--cream);
+  border:none;border-radius:100px;padding:18px 36px;text-decoration:none;cursor:pointer;
+  transition:transform .18s ease,box-shadow .25s ease,background .2s ease;
 }
-.btn:hover{background:var(--gold-soft);transform:translateY(-2px);}
-.btn svg{width:19px;height:19px;}
+.btn:hover{background:var(--ink-soft);transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(201,168,76,.6);}
+.btn svg{width:19px;height:19px;color:var(--gold-soft);}
 
 /* rodape */
-footer{padding:40px 0 30px;text-align:center;}
+footer{padding:42px 0 46px;text-align:center;background:var(--cream-deep);}
 footer .f-brand{font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;letter-spacing:.02em;margin-bottom:8px;}
-footer .f-brand span{color:var(--gold);}
+footer .f-brand span{color:var(--gold-deep);}
 footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
 
-/* barra fixa mobile */
-.sticky{
-  position:fixed;left:0;right:0;bottom:0;z-index:50;
-  background:rgba(20,20,20,.97);backdrop-filter:blur(10px);
-  border-top:1px solid var(--line);
-  display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:12px 20px;
-}
-.sticky .sv{font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;}
-.sticky .sv small{display:block;font-family:'Inter';font-weight:400;font-size:11px;color:var(--muted);letter-spacing:.04em;}
-.sticky .sv b{color:var(--gold);}
-.sticky .btn{padding:13px 22px;font-size:13px;}
-
-@media(max-width:640px){
+@media(max-width:720px){
   .diag,.steps{grid-template-columns:1fr;}
-  .hero{padding:52px 0 44px;}
-  section{padding:46px 0;}
-  .invest,.prod{padding:26px 22px;}
-  .sticky .btn span{display:none;}
+  .gallery{grid-template-columns:1fr 1fr;}
+  .hero{padding:60px 0 50px;}
+  section{padding:48px 0;}
+  .invest,.prod{padding:28px 22px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;}
+  .pcard:hover img{transform:none;}
 }
 </style>
 </head>
@@ -222,23 +274,50 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
         <h3>O que você recebe</h3>
         <div class="price">R$900 à vista</div>
       </div>
-      <div class="role">Entrega única, a partir de um encontro individual de diagnóstico.</div>
+      <div class="role">Conduzida em dois encontros ao vivo, com suporte direto depois.</div>
       <div class="feat">
-        <div class="f"><div class="dot">•</div><div><h4>Mapa de Posicionamento</h4><p>Público, problema que a Vibe Mar resolve e como ela resolve, extraídos em encontro individual. É a base de tudo que vem depois.</p></div></div>
+        <div class="f"><div class="dot">•</div><div><h4>Mapa de Posicionamento</h4><p>Público, problema que a Vibe Mar resolve e como ela resolve, extraídos no primeiro encontro. É a base de tudo que vem depois.</p></div></div>
         <div class="f"><div class="dot">•</div><div><h4>Branding Book</h4><p>Paleta, tipografia e padrão visual próprios pra agência, pra todo post ter a mesma cara e a marca fixar.</p></div></div>
         <div class="f"><div class="dot">•</div><div><h4>15 posts prontos</h4><p>Tema, ângulo e gancho dos 15 posts já no novo posicionamento, organizados pra você publicar com constância.</p></div></div>
         <div class="f"><div class="dot">•</div><div><h4>Roteiro de stories</h4><p>Sequência pensada pra atrair e qualificar as clientes certas ao longo da semana.</p></div></div>
         <div class="f"><div class="dot">•</div><div><h4>Scripts de atendimento</h4><p>Modelos prontos de resposta pro WhatsApp e pro direct, pra cada conversa começar aquecida e conduzir pro fechamento.</p></div></div>
       </div>
-      <div class="priceline">
-        <div class="pl">Investimento <b>R$900</b> à vista ou 2x de R$480 no cartão</div>
-        <div class="pl">Pagamento <b>único</b></div>
+      <div class="format">
+        <h4>Como a consultoria acontece</h4>
+        <p>Dois encontros ao vivo. O <b>primeiro de extração</b>, onde eu levanto público, oferta e os diferenciais da Vibe Mar. O <b>segundo de entrega, 7 dias depois</b>, onde apresento o Mapa, o Branding Book, os posts, os stories e os scripts, já prontos. Depois do segundo encontro, você tem <b>30 dias de suporte direto comigo</b> pra tirar dúvida e ajustar o que precisar.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section>
+  <div class="wrap">
+    <div class="eyebrow sec-label">Exemplos de posts</div>
+    <h2 class="sec-title">O padrão do que você recebe</h2>
+    <p class="sec-intro">Alguns posts que já produzi, pra você ver o nível de acabamento que entra nos 15 posts da Vibe Mar. Cada um com um papel: atrair, dar autoridade, informar ou converter.</p>
+    <div class="gallery">
+      <figure class="pcard">
+        <img src="posts/post-nordicos-1.webp" alt="Post de destino Países Nórdicos" loading="lazy">
+        <figcaption class="cap">Capa de destino</figcaption>
+      </figure>
+      <figure class="pcard">
+        <img src="posts/post-tcheca.webp" alt="Post de autoridade sobre a República Tcheca" loading="lazy">
+        <figcaption class="cap">Gancho de autoridade</figcaption>
+      </figure>
+      <figure class="pcard">
+        <img src="posts/post-polonia-rota.webp" alt="Carrossel com mapa de rota da Polônia" loading="lazy">
+        <figcaption class="cap">Carrossel informativo</figcaption>
+      </figure>
+      <figure class="pcard">
+        <img src="posts/post-nordicos-2.webp" alt="Post de oferta com valor" loading="lazy">
+        <figcaption class="cap">Post de oferta</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">Exemplos de trabalhos já entregues. Os posts da Vibe Mar são criados do zero, no posicionamento e na identidade definidos pra sua agência.</p>
+  </div>
+</section>
+
+<section class="invest-sec">
   <div class="wrap">
     <div class="eyebrow sec-label">Os números, claros</div>
     <h2 class="sec-title">Investimento</h2>
@@ -262,22 +341,25 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
 <section>
   <div class="wrap">
     <div class="eyebrow sec-label">Como funciona</div>
-    <h2 class="sec-title">Da contratação à entrega</h2>
+    <h2 class="sec-title">Da contratação ao suporte</h2>
     <div class="steps">
       <div class="step">
         <div class="s">ETAPA 01</div>
-        <h3>Encontro de diagnóstico</h3>
-        <p>Uma conversa individual pra extrair público, oferta e os diferenciais reais da Vibe Mar.</p>
+        <div class="when">Encontro de extração</div>
+        <h3>Levantamento</h3>
+        <p>Uma conversa individual ao vivo pra extrair público, oferta e os diferenciais reais da Vibe Mar.</p>
       </div>
       <div class="step">
         <div class="s">ETAPA 02</div>
-        <h3>Posicionamento e marca</h3>
-        <p>Entrego o Mapa de Posicionamento e o Branding Book com a identidade visual da agência.</p>
+        <div class="when">7 dias depois</div>
+        <h3>Encontro de entrega</h3>
+        <p>Apresento o Mapa, o Branding Book, os 15 posts, o roteiro de stories e os scripts, já prontos.</p>
       </div>
       <div class="step">
         <div class="s">ETAPA 03</div>
-        <h3>Conteúdo e scripts</h3>
-        <p>Os 15 posts, o roteiro de stories e os scripts de atendimento prontos pra você aplicar.</p>
+        <div class="when">Após o 2º encontro</div>
+        <h3>30 dias de suporte</h3>
+        <p>Você fala comigo direto por 30 dias pra tirar dúvida e ajustar o que precisar na aplicação.</p>
       </div>
     </div>
   </div>
@@ -301,14 +383,6 @@ footer .f-meta{font-size:12px;color:var(--muted-dim);letter-spacing:.03em;}
     <div class="f-meta">Proposta de consultoria de posicionamento · outubro 2026</div>
   </div>
 </footer>
-
-<div class="sticky">
-  <div class="sv"><small>Consultoria de posicionamento</small>R$900 <b>à vista ou 2x</b></div>
-  <a class="btn" href="https://wa.me/5561981784728?text=Oi%20JP%2C%20li%20a%20proposta%20da%20consultoria%20e%20quero%20conversar%20sobre%20a%20Vibe%20Mar." target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
-    <span>Falar</span>
-  </a>
-</div>
 
 </body>
 </html>
