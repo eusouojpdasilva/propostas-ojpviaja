@@ -7,7 +7,7 @@ Nome correto da marca: Vibe Mar Travel (não "turismo").
 A Katya pediu uma proposta só da Consultoria de Posicionamento. Esta v3 substitui a v2.
 Oferta: Consultoria de Posicionamento avulsa.
 - Escopo: Mapa de Posicionamento, Branding Book, 15 posts (tema, ângulo e gancho), roteiro de stories e scripts de atendimento.
-- Preço: R$900 à vista (Pix ou transferência) ou 2x de R$480 no cartão.
+- Preço: R$900 à vista (Pix ou transferência) ou 3x de R$320 no cartão.
 - Pagamento único, trabalho pontual, sem mensalidade.
 - Escopo mantido igual ao que ela viu como bônus na v2 (com Branding Book), a pedido do JP.
 - Formato: 2 encontros ao vivo. 1º de extração, 2º de entrega 7 dias depois. Mais 30 dias de suporte direto após o segundo encontro.
