@@ -3,15 +3,21 @@
 Lead de agência de viagens, indicada pela Roberta em evento da Pátria na ABV.
 Nome correto da marca: Vibe Mar Travel (não "turismo").
 
-## Proposta (versão 2 — 08/10/2026)
-Oferta principal: Estrutura Reservas + Assessoria Mensal.
-- Estrutura Reservas (landing + CRM + agente WhatsApp + propostas): R$1.500 em 2x de R$750, setup único.
-- Manutenção e atualizações: R$120/mês.
-- Assessoria Mensal: R$1.200/mês nos meses 1 a 3, R$1.500/mês a partir do mês 4.
-- Bônus inclusos ao fechar a estrutura: Consultoria de Posicionamento (Mapa + Branding Book + 15 posts + stories), Roteiros Infinitos e Banco de Prompts.
-- Verba de anúncios: separada, por conta da agência. Gestão da verba inclusa na assessoria.
+## Proposta (versão 3 — 16/10/2026) — ATUAL
+A Katya pediu uma proposta só da Consultoria de Posicionamento. Esta v3 substitui a v2.
+Oferta: Consultoria de Posicionamento avulsa.
+- Escopo: Mapa de Posicionamento, Branding Book, 15 posts (tema, ângulo e gancho), roteiro de stories e scripts de atendimento.
+- Preço: R$900 à vista (Pix ou transferência) ou 2x de R$480 no cartão.
+- Pagamento único, trabalho pontual, sem mensalidade.
+- Escopo mantido igual ao que ela viu como bônus na v2 (com Branding Book), a pedido do JP.
 
-A versão 1 (só consultoria R$900) foi substituída por esta. A consultoria virou bônus.
+## Histórico
+- v1 (08/10): só consultoria R$900. Substituída.
+- v2 (08/10): Estrutura Reservas + Assessoria Mensal, consultoria virou bônus. Substituída.
+- v3 (16/10): só Consultoria, a pedido da Katya. É a atual no ar.
+
+## Observação de 15k
+Esta venda é consultoria avulsa, pagamento único. Não conta pra meta de recorrência (15k). A Katya recuou da Estrutura + Assessoria por orçamento. Consultoria bem entregue pode reaquecer pra assessoria depois.
 
 ## Contexto
 - Conta: @vibemarturismo, 530 seguidores, alcance orgânico baixo
@@ -22,14 +28,8 @@ A versão 1 (só consultoria R$900) foi substituída por esta. A consultoria vir
 
 ## Status
 - Reunião: 07/10/2026
-- Proposta v1 enviada: 08/10/2026
-- Proposta v2 (esta): 08/10/2026
-- Temperatura: morna, interesse real, compra condicionada a patrocínio
-
-## Pendências antes de enviar
-
-## Decisão de ecossistema registrada
-Estrutura passa a R$1.500 em 2x + R$120/mês como novo padrão (substitui R$1.800 único do doc mestre). Atualizar o doc.
+- Proposta v3 (consultoria) montada: 16/10/2026
+- Temperatura: morna, interesse real
 
 ## Link
 Página: https://eusouojpdasilva.github.io/propostas-ojpviaja/katya-vibemar/
