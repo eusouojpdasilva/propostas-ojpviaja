@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <meta name="description" content="Proposta comercial para a HK Viagens">
+  <meta name="description" content="Proposta de Assessoria Mensal para a HK Viagens">
   <title>Proposta | HK Viagens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
     .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
 
     .hero {
-      min-height: 660px;
+      min-height: 560px;
       position: relative;
       display: grid;
       align-items: end;
@@ -86,44 +86,11 @@
       text-transform: uppercase;
     }
     .brand span { color: var(--gold); }
-    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-    .hero-copy .hero-meta { margin-top: 26px; }
+    .hero-copy .hero-meta { margin-top: 26px; max-width: 620px; }
 
-    .demo {
-      position: relative;
-      border-radius: 11px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,.14);
-      box-shadow: 0 30px 70px rgba(0,0,0,.5);
-      background: #0a0a0a;
-    }
-    .demo-bar {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 11px 14px;
-      background: #171717;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .demo-bar i { width: 10px; height: 10px; border-radius: 50%; display: block; }
-    .demo-bar i:nth-child(1) { background: #ff5f57; }
-    .demo-bar i:nth-child(2) { background: #febc2e; }
-    .demo-bar i:nth-child(3) { background: #28c840; }
-    .demo-bar span { margin-left: 10px; color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: .02em; font-family: Inter, sans-serif; }
-    .demo video { display: block; width: 100%; height: auto; }
-    .demo-caption {
-      margin-top: 16px;
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      color: rgba(255,255,255,.6);
-      font-size: 12.5px;
-      letter-spacing: .02em;
-    }
-    .demo-caption::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(201,168,76,.18); flex-shrink: 0; }
     h1, h2, h3, p { margin-top: 0; }
     h1 {
-      max-width: 760px;
+      max-width: 860px;
       margin: 24px 0 0;
       font-family: Montserrat, sans-serif;
       font-size: clamp(42px, 6vw, 76px);
@@ -137,7 +104,7 @@
       border-left: 1px solid rgba(255,255,255,.25);
       padding: 5px 0 5px 22px;
       color: rgba(255,255,255,.72);
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.7;
     }
     .hero-meta strong { display: block; color: var(--white); font-size: 15px; }
@@ -165,7 +132,7 @@
 
     .scope { background: var(--white); padding: 118px 0 128px; }
     .scope-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 64px; align-items: end; }
-    .scope-heading h2, .method h2, .investment h2, .terms h2 {
+    .scope-heading h2, .method h2, .investment h2, .terms h2, .phase2 h2 {
       margin-bottom: 0;
       font-family: Montserrat, sans-serif;
       font-size: clamp(36px, 5vw, 57px);
@@ -177,18 +144,15 @@
     .scope-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .scope-card {
       padding: 36px 34px 34px;
-      min-height: 295px;
+      min-height: 280px;
       border: 1px solid var(--mist);
       position: relative;
       transition: transform .25s ease, box-shadow .25s ease;
     }
     .scope-card:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(14,14,14,.08); }
-    .number { display: block; margin-bottom: 62px; font-family: Montserrat, sans-serif; color: var(--gold); font-size: 13px; font-weight: 600; }
+    .number { display: block; margin-bottom: 56px; font-family: Montserrat, sans-serif; color: var(--gold); font-size: 13px; font-weight: 600; }
     .scope-card h3 { margin-bottom: 14px; font-family: Montserrat, sans-serif; font-size: 23px; font-weight: 600; letter-spacing: -.025em; }
     .scope-card p { margin: 0; color: #5D584F; font-size: 15px; line-height: 1.65; }
-    .scope-card ul { padding: 0; margin: 15px 0 0; list-style: none; color: #5D584F; font-size: 15px; line-height: 1.65; }
-    .scope-card li { position: relative; padding-left: 15px; }
-    .scope-card li::before { content: "•"; position: absolute; left: 0; color: var(--gold); }
 
     .bonus { padding: 120px 0; background: #EDE8DE; }
     .bonus-header { max-width: 720px; margin-bottom: 56px; }
@@ -225,15 +189,46 @@
     .investment .section-title { color: var(--gold); }
     .investment h2 { margin-top: 20px; }
     .investment-note { color: rgba(255,255,255,.66); line-height: 1.7; }
-    .block-label { margin: 0 0 4px; font-family: Montserrat, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
     .price-stack { border-top: 1px solid rgba(255,255,255,.24); }
-    .price-stack + .block-label { margin-top: 48px; }
     .price-row { padding: 31px 0; display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; border-bottom: 1px solid rgba(255,255,255,.24); }
     .price-label { color: rgba(255,255,255,.7); font-size: 14px; line-height: 1.5; }
     .price-label strong { display: block; color: var(--white); font-family: Montserrat, sans-serif; font-size: 18px; font-weight: 600; }
-    .price { font-family: Montserrat, sans-serif; font-size: clamp(28px, 3.4vw, 42px); font-weight: 600; letter-spacing: -.04em; color: var(--gold); white-space: nowrap; }
+    .price { font-family: Montserrat, sans-serif; font-size: clamp(30px, 3.6vw, 46px); font-weight: 600; letter-spacing: -.04em; color: var(--gold); white-space: nowrap; }
     .price small { font-size: .38em; letter-spacing: 0; }
     .ad-note { margin: 24px 0 0; color: rgba(255,255,255,.58); font-size: 13px; line-height: 1.7; }
+
+    .phase2 { padding: 120px 0; background: #EDE8DE; }
+    .phase2-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .phase2 .section-title { color: var(--gold); }
+    .phase2 h2 { margin: 18px 0 0; }
+    .phase2 p { margin: 22px 0 0; color: #5D584F; font-size: 16px; line-height: 1.7; }
+    .phase2 ul { margin: 20px 0 0; padding: 0; list-style: none; color: #5D584F; font-size: 15px; line-height: 1.6; }
+    .phase2 li { position: relative; padding-left: 16px; margin-bottom: 6px; }
+    .phase2 li::before { content: "•"; position: absolute; left: 0; color: var(--gold); }
+    .demo {
+      position: relative;
+      border-radius: 11px;
+      overflow: hidden;
+      border: 1px solid rgba(14,14,14,.14);
+      box-shadow: 0 30px 70px rgba(14,14,14,.22);
+      background: #0a0a0a;
+    }
+    .demo-bar {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 11px 14px;
+      background: #171717;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .demo-bar i { width: 10px; height: 10px; border-radius: 50%; display: block; }
+    .demo-bar i:nth-child(1) { background: #ff5f57; }
+    .demo-bar i:nth-child(2) { background: #febc2e; }
+    .demo-bar i:nth-child(3) { background: #28c840; }
+    .demo-bar span { margin-left: 10px; color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: .02em; font-family: Inter, sans-serif; }
+    .demo video { display: block; width: 100%; height: auto; }
+    .demo-caption { margin-top: 15px; display: flex; align-items: center; gap: 9px; color: var(--muted); font-size: 12.5px; letter-spacing: .02em; }
+    .demo-caption::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(201,168,76,.18); flex-shrink: 0; }
 
     .terms { padding: 120px 0; background: var(--white); }
     .terms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10vw; }
@@ -266,11 +261,10 @@
     @media (max-width: 720px) {
       .shell { width: min(100% - 36px, 1120px); }
       .hero { min-height: auto; padding-bottom: 56px; }
-      .hero-grid, .intro-grid, .scope-heading, .investment-grid, .terms-grid { grid-template-columns: 1fr; }
-      .hero-grid { gap: 40px; }
+      .intro-grid, .scope-heading, .investment-grid, .terms-grid, .phase2-grid { grid-template-columns: 1fr; }
+      .phase2-grid { gap: 36px; }
       .hero-meta { max-width: 340px; }
-      .demo-caption { font-size: 12px; }
-      .intro, .scope, .bonus, .method, .investment, .terms, .cta { padding: 80px 0; }
+      .intro, .scope, .bonus, .method, .investment, .phase2, .terms, .cta { padding: 80px 0; }
       .scope-heading { gap: 20px; margin-bottom: 38px; }
       .scope-grid { grid-template-columns: 1fr; }
       .scope-card { min-height: auto; padding: 29px 25px; }
@@ -298,24 +292,12 @@
   <main class="proposal">
     <section class="hero">
       <div class="hero-top"><div class="shell brand">O JP <span>Viaja</span></div></div>
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Proposta comercial</span>
-          <h1>Estrutura e<br>crescimento para a <em>HK Viagens</em></h1>
-          <div class="hero-meta">
-            <strong>Hans e Karen</strong>
-            Posicionamento, sistema de captação e acompanhamento estratégico para transformar a vivência de vocês em conversa constante no WhatsApp.
-          </div>
-        </div>
-        <div>
-          <div class="demo">
-            <div class="demo-bar"><i></i><i></i><i></i><span>CRM · HK Viagens</span></div>
-            <video autoplay loop muted playsinline poster="crm_poster.jpg">
-              <source src="crm_demo.webm" type="video/webm">
-              <source src="crm_demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="demo-caption">O mesmo CRM que você viu na reunião, rodando ao vivo</div>
+      <div class="shell hero-copy">
+        <span class="eyebrow">Proposta comercial</span>
+        <h1>Assessoria mensal<br>para a <em>HK Viagens</em></h1>
+        <div class="hero-meta">
+          <strong>Hans e Karen</strong>
+          Conteúdo, tráfego pago e acompanhamento estratégico para transformar a vivência de vocês em conversa constante no WhatsApp, mês a mês.
         </div>
       </div>
     </section>
@@ -324,8 +306,8 @@
       <div class="shell intro-grid">
         <div><span class="section-title">O ponto de partida</span></div>
         <div class="intro-copy">
-          <p>A HK Viagens começou com algo que a maioria das agências novas não tem: vivência real dos destinos e cabeça de quem já tocou negócio. O que falta agora é estrutura para parar de depender só de indicação e ter conversa nova chegando toda semana.</p>
-          <p>Esta proposta organiza isso em dois passos. Primeiro o sistema de captação, com o posicionamento junto. Depois o acompanhamento mensal, que coloca o tráfego para rodar e mantém tudo funcionando.</p>
+          <p>A HK Viagens começou com algo que a maioria das agências novas não tem: vivência real dos destinos e cabeça de quem já tocou negócio. O que falta agora é constância, conteúdo e tráfego para parar de depender só de indicação e ter conversa nova chegando toda semana.</p>
+          <p>Começamos pela assessoria mensal, que coloca a máquina para girar desde já. A estrutura completa de captação, com landing e CRM, entra numa segunda fase, quando fizer sentido potencializar o que já estiver rodando.</p>
         </div>
       </div>
     </section>
@@ -333,34 +315,29 @@
     <section class="scope">
       <div class="shell">
         <div class="scope-heading">
-          <h2>A Estrutura<br>do Funil</h2>
-          <p>O sistema completo de captação, montado com a identidade da HK e entregue pronto para operar. A estrutura fica com vocês.</p>
+          <h2>A Assessoria<br>Mensal</h2>
+          <p>A operação que mantém a HK aparecendo e captando todo mês. Conteúdo, tráfego e acompanhamento próximo, com entrega contínua.</p>
         </div>
         <div class="scope-grid">
           <article class="scope-card">
             <span class="number">01</span>
-            <h3>Landing page de captação</h3>
-            <p>Página com a identidade visual da HK, otimizada para celular, com formulário de qualificação em etapas que filtra o lead antes de chegar no seu WhatsApp.</p>
+            <h3>Gestão de tráfego pago</h3>
+            <p>Criação e gestão das campanhas no Meta Ads, levando lead qualificado para o WhatsApp e o Instagram da HK, com públicos e criativos definidos por mim.</p>
           </article>
           <article class="scope-card">
             <span class="number">02</span>
-            <h3>CRM personalizado</h3>
-            <p>O painel que você viu na reunião.</p>
-            <ul>
-              <li>Pipeline de vendas e controle de leads</li>
-              <li>Clientes ativos, inativos e aniversariantes</li>
-              <li>Financeiro de comissões e parcelamento</li>
-            </ul>
+            <h3>Conteúdo e linha editorial</h3>
+            <p>Calendário mensal alinhado com as campanhas, com orientação de tema, roteiro e estilo dos criativos, baseado no que funciona.</p>
           </article>
           <article class="scope-card">
             <span class="number">03</span>
-            <h3>Robô de pré-atendimento</h3>
-            <p>Automação no WhatsApp conectada ao ChatGPT, calibrada para filtrar lead frio, responder dúvida comum e direcionar o lead quente para você.</p>
+            <h3>Otimização contínua</h3>
+            <p>Ajuste constante de anúncios e criativos para reduzir o custo por lead e melhorar a qualidade dos contatos que chegam até vocês.</p>
           </article>
           <article class="scope-card">
             <span class="number">04</span>
-            <h3>Propostas e blog</h3>
-            <p>Área de propostas de voos, hotéis e passeios pronta para enviar ao cliente, mais um blog integrado para posicionamento no Google e indicação por IA.</p>
+            <h3>Acompanhamento próximo</h3>
+            <p>Reuniões quinzenais de estratégia, leitura dos números do mês e suporte direto no WhatsApp para ajustes rápidos.</p>
           </article>
         </div>
       </div>
@@ -369,7 +346,7 @@
     <section class="bonus">
       <div class="shell">
         <div class="bonus-header">
-          <span class="section-title">Incluso ao fechar a estrutura</span>
+          <span class="section-title">Incluso ao começar a assessoria</span>
           <h2>O posicionamento vem junto</h2>
           <p>Antes de colocar anúncio para rodar, a HK precisa saber para quem vende e o que falar. Por isso a parte de posicionamento e conteúdo entra como bônus, sem custo adicional.</p>
         </div>
@@ -403,13 +380,13 @@
       <div class="shell">
         <div class="method-header">
           <span class="section-title">Como funciona</span>
-          <h2>Da montagem ao sistema rodando</h2>
-          <p>A estrutura é entregue uma vez e fica com a HK. A assessoria mensal é o que alimenta o sistema com tráfego e mantém tudo evoluindo mês a mês.</p>
+          <h2>Da largada à máquina girando</h2>
+          <p>A assessoria começa definindo o posicionamento e já entra em execução no mesmo mês. A partir daí é otimização contínua, com acompanhamento próximo.</p>
         </div>
         <div class="timeline">
-          <div class="step"><b>Montagem e posicionamento</b><p>Definição do posicionamento, criação da landing, do CRM e do robô com a identidade da HK.</p></div>
-          <div class="step"><b>Entrega do sistema</b><p>O sistema entra no ar, pronto para operar, e a propriedade fica com vocês.</p></div>
-          <div class="step"><b>Assessoria mensal</b><p>Tráfego pago, conteúdo e otimização contínua, com acompanhamento próximo.</p></div>
+          <div class="step"><b>Posicionamento</b><p>Definição de para quem a HK vende e o que falar, com os 12 posts e os scripts prontos para começar.</p></div>
+          <div class="step"><b>Execução mensal</b><p>Campanhas no ar, conteúdo publicado e leads chegando no WhatsApp e no Instagram da HK.</p></div>
+          <div class="step"><b>Otimização e rota</b><p>Leitura dos números, ajuste de criativos e campanhas, com reuniões quinzenais de acompanhamento.</p></div>
         </div>
       </div>
     </section>
@@ -418,23 +395,10 @@
       <div class="shell investment-grid">
         <div>
           <span class="section-title">Investimento</span>
-          <h2>Os valores, separados</h2>
-          <p class="investment-note">A estrutura é um setup único. A assessoria é mensal e começa a partir da entrega do sistema. A HK contrata as duas ou só a estrutura, conforme o momento.</p>
+          <h2>Assessoria Mensal</h2>
+          <p class="investment-note">Serviço recorrente, com período inicial de três meses. A primeira mensalidade é paga na contratação e as seguintes na data combinada.</p>
         </div>
         <div>
-          <p class="block-label">Estrutura do Funil</p>
-          <div class="price-stack">
-            <div class="price-row">
-              <div class="price-label"><strong>Setup da estrutura</strong>Landing, CRM, robô, propostas e blog, mais os três bônus. Sistema seu, entregue pronto.</div>
-              <div class="price">R$ 1.500<small>em 2x</small></div>
-            </div>
-            <div class="price-row">
-              <div class="price-label"><strong>Suporte e manutenção</strong>Atualizações e suporte técnico do sistema, a partir da entrega</div>
-              <div class="price">R$ 120<small>/mês</small></div>
-            </div>
-          </div>
-
-          <p class="block-label">Assessoria Mensal</p>
           <div class="price-stack">
             <div class="price-row">
               <div class="price-label"><strong>Meses 1 a 3</strong>Condição inicial da assessoria</div>
@@ -445,7 +409,34 @@
               <div class="price">R$ 1.500<small>/mês</small></div>
             </div>
           </div>
-          <p class="ad-note">A verba das campanhas no Meta Ads é separada e paga diretamente pela HK à Meta. A gestão dessa verba está inclusa na assessoria. Recomendo começar com no mínimo R$600 por mês de verba.</p>
+          <p class="ad-note">A verba das campanhas no Meta Ads é separada e paga diretamente pela HK à Meta. A gestão dessa verba está inclusa na assessoria. Recomendo começar com no mínimo R$600 por mês de verba, cerca de R$20 por dia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="phase2">
+      <div class="shell phase2-grid">
+        <div>
+          <span class="section-title">Segunda fase</span>
+          <h2>A estrutura completa</h2>
+          <p>Com a assessoria rodando, o passo seguinte é montar o sistema próprio de captação, aquele CRM que você viu na reunião. Ele qualifica o lead antes de chegar em vocês e organiza tudo num só lugar.</p>
+          <ul>
+            <li>Landing page de captação com formulário de qualificação</li>
+            <li>CRM personalizado com pipeline, clientes e financeiro</li>
+            <li>Robô de pré-atendimento no WhatsApp conectado ao ChatGPT</li>
+            <li>Área de propostas e blog integrado</li>
+          </ul>
+          <p>Entra quando fizer sentido, sem pressa. A gente alinha escopo e valores quando chegar lá.</p>
+        </div>
+        <div>
+          <div class="demo">
+            <div class="demo-bar"><i></i><i></i><i></i><span>CRM · HK Viagens</span></div>
+            <video autoplay loop muted playsinline poster="crm_poster.jpg">
+              <source src="crm_demo.webm" type="video/webm">
+              <source src="crm_demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="demo-caption">O mesmo CRM que você viu na reunião, rodando ao vivo</div>
         </div>
       </div>
     </section>
@@ -457,23 +448,22 @@
           <h2>Uma parceria com clareza</h2>
         </div>
         <div class="terms-copy">
-          <p>A estrutura é entregue uma vez e passa a ser propriedade da HK. A mensalidade de R$120 cobre suporte técnico e atualizações do sistema enquanto ele estiver em uso.</p>
-          <p>A assessoria tem período inicial de três meses. Ao final, avaliamos os resultados e a continuidade em conjunto, sem renovação automática.</p>
+          <p>A assessoria tem período inicial de três meses, tempo necessário para organizar a operação, colocar as campanhas no ar e acompanhar os primeiros resultados.</p>
+          <p>Ao final, avaliamos os resultados e a continuidade em conjunto, sem renovação automática. A estrutura completa de captação fica como segunda fase, contratada à parte quando vocês quiserem avançar.</p>
           <div class="exclusions">
             <h3>Itens que ficam fora do escopo</h3>
             <ul>
               <li>Verba destinada aos anúncios</li>
               <li>Produção de fotos e vídeos para os criativos</li>
-              <li>Integração com CRM ou sistema de terceiros, orçada à parte</li>
-              <li>Desenvolvimento de funcionalidade nova no sistema, orçado à parte</li>
+              <li>A estrutura de captação (landing, CRM e robô), que é a segunda fase</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="shell summary">
         <div class="summary-item"><span>Proposta</span><strong>HK Viagens</strong></div>
-        <div class="summary-item"><span>Estrutura</span><strong>Setup único, propriedade da HK</strong></div>
-        <div class="summary-item"><span>Assessoria</span><strong>Período inicial de 3 meses</strong></div>
+        <div class="summary-item"><span>Serviço</span><strong>Assessoria Mensal</strong></div>
+        <div class="summary-item"><span>Período inicial</span><strong>3 meses</strong></div>
         <div class="summary-item"><span>Acompanhamento</span><strong>Reuniões quinzenais</strong></div>
       </div>
     </section>
@@ -483,8 +473,8 @@
         <div class="cta-box">
           <span class="eyebrow">Próximo passo</span>
           <h2>Vamos marcar a conversa</h2>
-          <p>Leiam com calma. Qualquer dúvida sobre o que cada parte cobre, me chamem no WhatsApp e marcamos uma nova conversa para alinhar e definir por onde começar.</p>
-          <a class="cta-btn" href="https://wa.me/5561999999999?text=Oi%20Jo%C3%A3o%2C%20vimos%20a%20proposta%20da%20HK%20Viagens" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+          <p>Leiam com calma. Qualquer dúvida sobre o que a assessoria cobre, me chamem no WhatsApp e marcamos uma nova conversa para alinhar e definir por onde começar.</p>
+          <a class="cta-btn" href="https://wa.me/5561981784728?text=Oi%20Jo%C3%A3o%2C%20vimos%20a%20proposta%20da%20HK%20Viagens%20e%20queremos%20conversar" target="_blank" rel="noopener">Falar no WhatsApp →</a>
           <p class="cta-note">Hans e Karen · HK Viagens</p>
         </div>
       </div>

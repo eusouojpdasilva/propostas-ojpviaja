@@ -4,15 +4,18 @@ Lead de agência de viagens em Itapema-SC. Casal de corretores de imóveis (6 an
 Indicado por contato que participou de reunião anterior com JP.
 Instagram: @hkviagens. WhatsApp da agência: (47) 98917-6745.
 
-## Proposta (01/2026 — 10/10/2026)
-Oferta: Estrutura do Funil + Assessoria Mensal, modelo padrão Katya.
-- Estrutura do Funil (landing + CRM + robô WhatsApp + propostas + blog): R$1.500 em 2x de R$750, setup único, propriedade da HK.
-- Suporte e manutenção: R$120/mês (não é condição de posse, só suporte técnico e atualização).
-- Bônus inclusos ao fechar a estrutura: Consultoria de Posicionamento (Mapa + 12 posts só estratégia + stories + scripts), Roteiros Infinitos e Banco de Prompts.
-- Assessoria Mensal: R$1.200/mês nos meses 1 a 3, R$1.500/mês a partir do mês 4.
-- Verba de anúncios: separada, por conta da agência. Gestão da verba inclusa na assessoria.
+## Proposta v2 (19/10/2026) — ATUAL: só Assessoria
+A pedido do JP, a proposta foi reestruturada pra focar só na Assessoria Mensal. A Estrutura virou segunda fase.
+- Assessoria Mensal: R$1.200/mês nos meses 1 a 3, R$1.500/mês a partir do mês 4. Período inicial de 3 meses.
+- Escopo da assessoria: tráfego pago, conteúdo e linha editorial, otimização de criativos, acompanhamento quinzenal e suporte WhatsApp.
+- Na fase 1 (só assessoria) o tráfego leva pro WhatsApp e Instagram da HK, sem landing/CRM. Ponto sinalizado ao JP: a landing qualifica melhor, fica pra fase 2.
+- Bônus inclusos ao começar a assessoria: Consultoria de Posicionamento (Mapa + 12 posts estratégia + stories + scripts), Roteiros Infinitos e Banco de Prompts.
+- Segunda fase (seção na página, com o vídeo do CRM): estrutura completa (landing, CRM, robô, propostas, blog), escopo e valores alinhados quando avançar. Sem preço cravado na página.
+- Verba de anúncios: separada, por conta da agência. Gestão inclusa na assessoria.
+- WhatsApp do CTA atualizado pro número do JP (5561981784728), saiu o placeholder.
 
-Consultoria entregue com 12 posts foco em estratégia (tema, ângulo, gancho), sem design. Design fica como serviço de webdesigner sob demanda. HK usa o próprio banco de imagem e vídeo.
+## Proposta v1 (10/10/2026) — substituída
+Era Estrutura do Funil (R$1.500 em 2x + R$120/mês manutenção, propriedade da HK) + Assessoria, modelo padrão Katya, com a estrutura como entrada. Trocada pela v2 só assessoria.
 
 ## Contexto
 - Conta: @hkviagens, 48 seguidores, 14 publicações, Instagram novo
@@ -27,8 +30,8 @@ Consultoria entregue com 12 posts foco em estratégia (tema, ângulo, gancho), s
 - Temperatura: morna-quente, interesse real, pediu proposta por escrito e nova conversa
 
 ## Pendências antes de enviar
-- Trocar o número do WhatsApp no botão da CTA (está com placeholder 5561999999999)
 - Confirmar se vai anexar o contrato (Template-Contrato-Assessoria) junto
+- Decidir se a fase 1 inclui uma landing simples ou se o tráfego vai mesmo direto pro WhatsApp
 
 ## Risco mapeado
 Hans é técnico e vai puxar customização. O bloco de exclusões na proposta já ancora integração de terceiros e funcionalidade nova como orçados à parte. Travar escopo no contrato.
